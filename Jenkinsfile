@@ -2,7 +2,6 @@ pipeline {
 
     agent any
  
-  
     stages {
  
         stage('Checkout Code') {
@@ -40,9 +39,7 @@ pipeline {
             }
 
         }
-
-
-/*
+        /*
         stage('Terraform Apply') {
 
             steps {
@@ -56,9 +53,7 @@ pipeline {
             }
 
         }
-*/
-
-
+        */
         stage('Terraform Destroy') {
 
             steps {

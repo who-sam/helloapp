@@ -39,7 +39,7 @@ pipeline {
             }
 
         }
-        /*
+        
         stage('Terraform Apply') {
 
             steps {
@@ -53,7 +53,7 @@ pipeline {
             }
 
         }
-        */
+        /*
         stage('Terraform Destroy') {
 
             steps {
@@ -65,8 +65,8 @@ pipeline {
                 echo "🔥 Infrastructure destroyed successfully!"
 
             }
-
         }
+        */
     }
  
     post {

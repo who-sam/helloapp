@@ -16,7 +16,7 @@ pipeline {
 
                 echo "🔹 Checking out repository..."
 
-                git branch: 'main', url: 'https://github.com/who-sam/helloapp'
+                git branch: 'main', url: 'https://github.com/who-sam/mind-infra-pipeline.git'
 
             }
 

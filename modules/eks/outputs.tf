@@ -57,3 +57,27 @@ output "oidc_provider_arn" {
   description = "ARN of the OIDC Provider for EKS"
   value       = aws_eks_cluster.main.identity[0].oidc[0].issuer
 }
+
+
+
+
+# EBS CSI Driver outputs
+output "ebs_csi_driver_role_arn" {
+  description = "ARN of the IAM role for EBS CSI driver"
+  value       = aws_iam_role.ebs_csi_driver.arn
+}
+
+output "oidc_provider_arn" {
+  description = "ARN of the OIDC provider for EKS"
+  value       = aws_iam_openid_connect_provider.eks.arn
+}
+
+output "oidc_provider_url" {
+  description = "URL of the OIDC provider for EKS"
+  value       = aws_iam_openid_connect_provider.eks.url
+}
+
+output "ebs_csi_addon_version" {
+  description = "Version of the EBS CSI driver addon"
+  value       = aws_eks_addon.ebs_csi_driver.addon_version
+}

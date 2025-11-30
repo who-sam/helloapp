@@ -9,9 +9,9 @@ pipeline {
         )
     }
 
-    triggers {
-        githubPush()
-    }
+    // triggers {
+    //     githubPush()
+    // }
 
     stages {
         stage('Checkout Code') {

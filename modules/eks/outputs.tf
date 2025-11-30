@@ -67,11 +67,6 @@ output "ebs_csi_driver_role_arn" {
   value       = aws_iam_role.ebs_csi_driver.arn
 }
 
-output "oidc_provider_arn" {
-  description = "ARN of the OIDC provider for EKS"
-  value       = aws_iam_openid_connect_provider.eks.arn
-}
-
 output "oidc_provider_url" {
   description = "URL of the OIDC provider for EKS"
   value       = aws_iam_openid_connect_provider.eks.url
